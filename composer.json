@@ -1,0 +1,43 @@
+{
+    "name": "zimosworld/SSLUtilAPI",
+    "description": "API wrapper for zimosworld/SSLTools library",
+    "keywords": ["ssl", "api", "lumen"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jonathan Zimros",
+            "email": "john@zimosworld.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/lumen-framework": "5.5.*",
+        "vlucas/phpdotenv": "~2.2",
+        "dingo/api": "2.0.0-alpha1",
+        "zimosworld/ssltools": "^1.1"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~6.0",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "optimize-autoloader": true
+}

@@ -1,0 +1,128 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SSLUtilAPI",
+		"_postman_id": "d1ffd94c-5e5a-64c2-0c31-5b68136ca9ab",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Decode - Certificate",
+			"request": {
+				"url": "http://{{host}}/api/decodeCertificate",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "certificate",
+							"value": "-----BEGIN CERTIFICATE-----\nMIIDZDCCAkwCCQDFapBwlifkjTANBgkqhkiG9w0BAQUFADB0MQswCQYDVQQGEwJB\nVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3NsdXRpbC5jb20xDzANBgNVBAcTBlN5ZG5l\neTERMA8GA1UEChMIU1NMIFRlc3QxDDAKBgNVBAgTA05TVzEUMBIGA1UECxMLRGV2\nZWxvcG1lbnQwHhcNMTcxMjMwMDcwMzI2WhcNMTgxMjMwMDcwMzI2WjB0MQswCQYD\nVQQGEwJBVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3NsdXRpbC5jb20xDzANBgNVBAcT\nBlN5ZG5leTERMA8GA1UEChMIU1NMIFRlc3QxDDAKBgNVBAgTA05TVzEUMBIGA1UE\nCxMLRGV2ZWxvcG1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDH\nNxjcjcusm5POQa71v4agV2Vc1EXLwuMwHxV8SFauI41SBwHrEeqLgufa/GD+Bm6k\nzKuiCdBcb9hpFi91rySMQ4pLPb3QAnsIzwjr6k7WFaQdGzJb00oa1394QTC/JmC+\niDpX1JapE7bxwZLzmB0Y3KqBEiiD0xRRNVbRkIP49VqDJ5Lgd93voYORWCbypCs3\n1YKuVja4ODmxc1to79FLddZn9kV4dZp1uNMZVkfJ7fb6wnNRmQOjXSHEiuCSrzGV\nMZQSJtaPDpx74pwfZraZiiKdZyN3cgejW26q+ESgVbOSZIMRa+IHwGCDtuoo8B4t\nI+hpsACVADi2MVISLX+pAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAKhtctYgzP0+\nTXajl8T/42QNrmnlWTmzwGDue/ac3rT2XYRX8OiCGM3WGggsoJ3Tg7zlk66AQ6ch\n6kJaLLaJT9JI0WsHxgrbFMRpNz7QfvPQbmepbEQbt7x8bbIqJdVA3L8uV5XDPEuF\nGPgMHc/+XuqSDrARISvKNtVZmhW1QTciyAGo2M+GG7/swJukiWskk7zj6OP8lNp1\nkQsGnegxtJzulEG0kxXEhNmV6DjJtj0Dz9ccdCJ8fpxZpZmCXqCbpIW61JJlLLuQ\nIOB6oL4TkaZ7HkBA5BTs+S14D1aPsP85LtaB3AYAzynGc60udt+MB9zPQ5B+ykiU\nFTuLFyGn1uU=\n-----END CERTIFICATE-----",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Decode - Certificate Request",
+			"request": {
+				"url": "http://{{host}}/api/decodeCertificateRequest",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "certificateRequest",
+							"value": "-----BEGIN CERTIFICATE REQUEST-----\nMIICuDCCAaACADB0MQswCQYDVQQGEwJBVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3Ns\ndXRpbC5jb20xDzANBgNVBAcTBlN5ZG5leTERMA8GA1UEChMIU1NMIFRlc3QxDDAK\nBgNVBAgTA05TVzEUMBIGA1UECxMLRGV2ZWxvcG1lbnQwggEiMA0GCSqGSIb3DQEB\nAQUAA4IBDwAwggEKAoIBAQDHNxjcjcusm5POQa71v4agV2Vc1EXLwuMwHxV8SFau\nI41SBwHrEeqLgufa/GD+Bm6kzKuiCdBcb9hpFi91rySMQ4pLPb3QAnsIzwjr6k7W\nFaQdGzJb00oa1394QTC/JmC+iDpX1JapE7bxwZLzmB0Y3KqBEiiD0xRRNVbRkIP4\n9VqDJ5Lgd93voYORWCbypCs31YKuVja4ODmxc1to79FLddZn9kV4dZp1uNMZVkfJ\n7fb6wnNRmQOjXSHEiuCSrzGVMZQSJtaPDpx74pwfZraZiiKdZyN3cgejW26q+ESg\nVbOSZIMRa+IHwGCDtuoo8B4tI+hpsACVADi2MVISLX+pAgMBAAGgADANBgkqhkiG\n9w0BAQsFAAOCAQEALBfscgpoMvv0toid/rPs4TmmtFS3gVjOg2qHwsl+p7MhYG3C\n9gO/Zmu8RCqKYJvQRoNGC0yrUHq/wQfuBaOECU93n3dOl0+GYppKOzXTQFE452BL\ni6WhgqI58tJyln+m8aFTNhfC8N4XFEkYXk5KowWeEsv9+FcK56kHQ3+N6DY5eVYK\n5taBT4sFA34e+fBAnVNBtAEd5GjPISgIf4t0bCExDfEuf8K1FeRzg1339dLSLChP\n1s6wrf67OKQeiezUf7Ls3+eSomIIcKek0Dnyvjf+XGvshVkYf0zrlyjq84YpxYP4\nnxRIJXjEpHbdYnl2ebmDexlaMzrPFVS1uNDCWA==\n-----END CERTIFICATE REQUEST-----",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Match - Certificate and Private Key",
+			"request": {
+				"url": "http://{{host}}/api/certificateKeyMatch",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "certificate",
+							"value": "-----BEGIN CERTIFICATE-----\nMIIDZDCCAkwCCQDFapBwlifkjTANBgkqhkiG9w0BAQUFADB0MQswCQYDVQQGEwJB\nVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3NsdXRpbC5jb20xDzANBgNVBAcTBlN5ZG5l\neTERMA8GA1UEChMIU1NMIFRlc3QxDDAKBgNVBAgTA05TVzEUMBIGA1UECxMLRGV2\nZWxvcG1lbnQwHhcNMTcxMjMwMDcwMzI2WhcNMTgxMjMwMDcwMzI2WjB0MQswCQYD\nVQQGEwJBVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3NsdXRpbC5jb20xDzANBgNVBAcT\nBlN5ZG5leTERMA8GA1UEChMIU1NMIFRlc3QxDDAKBgNVBAgTA05TVzEUMBIGA1UE\nCxMLRGV2ZWxvcG1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDH\nNxjcjcusm5POQa71v4agV2Vc1EXLwuMwHxV8SFauI41SBwHrEeqLgufa/GD+Bm6k\nzKuiCdBcb9hpFi91rySMQ4pLPb3QAnsIzwjr6k7WFaQdGzJb00oa1394QTC/JmC+\niDpX1JapE7bxwZLzmB0Y3KqBEiiD0xRRNVbRkIP49VqDJ5Lgd93voYORWCbypCs3\n1YKuVja4ODmxc1to79FLddZn9kV4dZp1uNMZVkfJ7fb6wnNRmQOjXSHEiuCSrzGV\nMZQSJtaPDpx74pwfZraZiiKdZyN3cgejW26q+ESgVbOSZIMRa+IHwGCDtuoo8B4t\nI+hpsACVADi2MVISLX+pAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAKhtctYgzP0+\nTXajl8T/42QNrmnlWTmzwGDue/ac3rT2XYRX8OiCGM3WGggsoJ3Tg7zlk66AQ6ch\n6kJaLLaJT9JI0WsHxgrbFMRpNz7QfvPQbmepbEQbt7x8bbIqJdVA3L8uV5XDPEuF\nGPgMHc/+XuqSDrARISvKNtVZmhW1QTciyAGo2M+GG7/swJukiWskk7zj6OP8lNp1\nkQsGnegxtJzulEG0kxXEhNmV6DjJtj0Dz9ccdCJ8fpxZpZmCXqCbpIW61JJlLLuQ\nIOB6oL4TkaZ7HkBA5BTs+S14D1aPsP85LtaB3AYAzynGc60udt+MB9zPQ5B+ykiU\nFTuLFyGn1uU=\n-----END CERTIFICATE-----",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "privateKey",
+							"value": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDHNxjcjcusm5PO\nQa71v4agV2Vc1EXLwuMwHxV8SFauI41SBwHrEeqLgufa/GD+Bm6kzKuiCdBcb9hp\nFi91rySMQ4pLPb3QAnsIzwjr6k7WFaQdGzJb00oa1394QTC/JmC+iDpX1JapE7bx\nwZLzmB0Y3KqBEiiD0xRRNVbRkIP49VqDJ5Lgd93voYORWCbypCs31YKuVja4ODmx\nc1to79FLddZn9kV4dZp1uNMZVkfJ7fb6wnNRmQOjXSHEiuCSrzGVMZQSJtaPDpx7\n4pwfZraZiiKdZyN3cgejW26q+ESgVbOSZIMRa+IHwGCDtuoo8B4tI+hpsACVADi2\nMVISLX+pAgMBAAECggEBAJ76bTC1R7C7hzy2VjVvXrReilmGXRy6risc4zyHTgUy\nAflP9kvtxEsJcJXlilGuOGXzn5R0WH8sEnvqZH16A6Sb0aUx5GQ3VpA1CF2cYsWe\nB5XiulFlUGITT3pcK9affd0PQeANmx3aycgsPmV/ItlQYBEYuJRawn/8HQioV2k4\nmT9QQFAXQESJ/6NEh5fmJE0vsDKKVC2KYF99FJD9/UvKmb0wWsV1XGbUuA8taIg0\n5IWgiuAyN69eyfPGdbXQMfvIxkMBwFzUJGvVG2jRTQdky/Ij7uHFQh6Wtnv+GJIe\n/5NZrDvZacv2mheT3jvqM10JsRZ6CmM8fgLX+VCN2vECgYEA+0khDAGAaH6poWWB\nxCuR36oCWyb3pDYM4J+UaM2echdeL8ycnc5xgI/5DktPPnHDSEPa4k6qILFRjhgy\ndjXy+cOP2+k76+GciUjKMh/kX66nx/cj4v5vSG7Hu51TpFN1tndW5/0C4pZfrHw3\niWPmGBVREqIP4Irseqwa1WmFwGcCgYEAyvPiirTzlI3MLnc8mHtPeshd/BxHEFN1\nx3z7fn2zjRa5T1y+qj1em34DII3b2It1KKRvnvLGW5rxtL/xOZu7dJfg815tjZ+y\nzFeQcG4mCI68Hm2314TgCILe5gFOJDSPPDLL+lNojxwChDm1gYvsj3cret8+EUo0\neRCKECXAdW8CgYEAiosOOlVVm8dB9SdG/YZcHenY9LKuVI4sWWgCZin/0r2Jg2cX\nbnYU5CH82eGxpicI2P34X0+pwu6gnWw/3ibueMBWv5N/IxU3vgUw3aPxwMNF5B0h\nXxSS/Gd/nbQnGnGdc+WmN6+qeI0Z4Lp30DsQ8HRIR7KseEuACD59aO6N/L8CgYEA\nnOEGtZeITcWKFkTfFzMCTfPCCpZFLE6HVWu775v1BdOR7NHRJEEJ94HhovFlBi9O\nodrx2VjqkXbk7YYNTi2eKlMYdKcCYh4XFLN/GBlc1vKWYaMIH9U7Y/jdmcdagswK\nCEtvtxFwWmcZXuJI9lmVw5QnjPQxwyWsCAUL4816xosCgYBlEpVP8irxIUx9Qjtl\nwM2IbwfLU0qRVA24ou+ehLIBs2ydTY6pL+BcAVvyHr7kO8ynhYwT/ju3/KLNM6gZ\narWhju78jVLNQHB1Zf2dO+uHoVypM60hGcRPYreigKtfeqtyMmAwyBaDrSePsAZH\ntDeVcToAvI70tNA5l+SL+yI3Pg==\n-----END PRIVATE KEY-----",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Match - Certificate and CSR",
+			"request": {
+				"url": "http://{{host}}/api/certificateCsrMatch",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "certificate",
+							"value": "-----BEGIN CERTIFICATE-----\nMIIDZDCCAkwCCQDFapBwlifkjTANBgkqhkiG9w0BAQUFADB0MQswCQYDVQQGEwJB\nVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3NsdXRpbC5jb20xDzANBgNVBAcTBlN5ZG5l\neTERMA8GA1UEChMIU1NMIFRlc3QxDDAKBgNVBAgTA05TVzEUMBIGA1UECxMLRGV2\nZWxvcG1lbnQwHhcNMTcxMjMwMDcwMzI2WhcNMTgxMjMwMDcwMzI2WjB0MQswCQYD\nVQQGEwJBVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3NsdXRpbC5jb20xDzANBgNVBAcT\nBlN5ZG5leTERMA8GA1UEChMIU1NMIFRlc3QxDDAKBgNVBAgTA05TVzEUMBIGA1UE\nCxMLRGV2ZWxvcG1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDH\nNxjcjcusm5POQa71v4agV2Vc1EXLwuMwHxV8SFauI41SBwHrEeqLgufa/GD+Bm6k\nzKuiCdBcb9hpFi91rySMQ4pLPb3QAnsIzwjr6k7WFaQdGzJb00oa1394QTC/JmC+\niDpX1JapE7bxwZLzmB0Y3KqBEiiD0xRRNVbRkIP49VqDJ5Lgd93voYORWCbypCs3\n1YKuVja4ODmxc1to79FLddZn9kV4dZp1uNMZVkfJ7fb6wnNRmQOjXSHEiuCSrzGV\nMZQSJtaPDpx74pwfZraZiiKdZyN3cgejW26q+ESgVbOSZIMRa+IHwGCDtuoo8B4t\nI+hpsACVADi2MVISLX+pAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAKhtctYgzP0+\nTXajl8T/42QNrmnlWTmzwGDue/ac3rT2XYRX8OiCGM3WGggsoJ3Tg7zlk66AQ6ch\n6kJaLLaJT9JI0WsHxgrbFMRpNz7QfvPQbmepbEQbt7x8bbIqJdVA3L8uV5XDPEuF\nGPgMHc/+XuqSDrARISvKNtVZmhW1QTciyAGo2M+GG7/swJukiWskk7zj6OP8lNp1\nkQsGnegxtJzulEG0kxXEhNmV6DjJtj0Dz9ccdCJ8fpxZpZmCXqCbpIW61JJlLLuQ\nIOB6oL4TkaZ7HkBA5BTs+S14D1aPsP85LtaB3AYAzynGc60udt+MB9zPQ5B+ykiU\nFTuLFyGn1uU=\n-----END CERTIFICATE-----",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "csr",
+							"value": "-----BEGIN CERTIFICATE REQUEST-----\nMIICuDCCAaACADB0MQswCQYDVQQGEwJBVTEdMBsGA1UEAxMUc3NsdG9vbHMuc3Ns\ndXRpbC5jb20xDzANBgNVBAcTBlN5ZG5leTERMA8GA1UEChMIU1NMIFRlc3QxDDAK\nBgNVBAgTA05TVzEUMBIGA1UECxMLRGV2ZWxvcG1lbnQwggEiMA0GCSqGSIb3DQEB\nAQUAA4IBDwAwggEKAoIBAQDHNxjcjcusm5POQa71v4agV2Vc1EXLwuMwHxV8SFau\nI41SBwHrEeqLgufa/GD+Bm6kzKuiCdBcb9hpFi91rySMQ4pLPb3QAnsIzwjr6k7W\nFaQdGzJb00oa1394QTC/JmC+iDpX1JapE7bxwZLzmB0Y3KqBEiiD0xRRNVbRkIP4\n9VqDJ5Lgd93voYORWCbypCs31YKuVja4ODmxc1to79FLddZn9kV4dZp1uNMZVkfJ\n7fb6wnNRmQOjXSHEiuCSrzGVMZQSJtaPDpx74pwfZraZiiKdZyN3cgejW26q+ESg\nVbOSZIMRa+IHwGCDtuoo8B4tI+hpsACVADi2MVISLX+pAgMBAAGgADANBgkqhkiG\n9w0BAQsFAAOCAQEALBfscgpoMvv0toid/rPs4TmmtFS3gVjOg2qHwsl+p7MhYG3C\n9gO/Zmu8RCqKYJvQRoNGC0yrUHq/wQfuBaOECU93n3dOl0+GYppKOzXTQFE452BL\ni6WhgqI58tJyln+m8aFTNhfC8N4XFEkYXk5KowWeEsv9+FcK56kHQ3+N6DY5eVYK\n5taBT4sFA34e+fBAnVNBtAEd5GjPISgIf4t0bCExDfEuf8K1FeRzg1339dLSLChP\n1s6wrf67OKQeiezUf7Ls3+eSomIIcKek0Dnyvjf+XGvshVkYf0zrlyjq84YpxYP4\nnxRIJXjEpHbdYnl2ebmDexlaMzrPFVS1uNDCWA==\n-----END CERTIFICATE REQUEST-----",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Check - SSL",
+			"request": {
+				"url": "http://{{host}}/api/checkSSL",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hostname",
+							"value": "http://google.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
